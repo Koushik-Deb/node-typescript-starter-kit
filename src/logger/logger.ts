@@ -17,6 +17,10 @@ const customLogger = createLogger({
       level: "debug",
       format: format.combine(format.timestamp(), format.json()),
     }),
+    new transports.Console({
+      level: "debug",
+      format: format.combine(format.timestamp(), format.json()),
+    }),
   ],
 });
 // console.log("custom logger ", customLogger);
