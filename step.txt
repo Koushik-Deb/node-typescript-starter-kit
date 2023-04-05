@@ -1,4 +1,5 @@
-Setting up Logger
+Setting up Logger - for reference 
+https://signoz.io/blog/winston-logger/
 
 1. npm i winston
 2. create logger/logger.ts in src directory
