@@ -76,3 +76,20 @@ https://signoz.io/blog/winston-logger/
 5. replace in package.json scripts 
    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q --experimental-specifier-resolution=node dist/index.js\""
    --experimental-specifier-resolution=node will be removed in node v19
+
+
+
+Setting up Routers --- steps
+
+1. Create "routes" folder
+2. Create index.ts and other route files as needed
+3. paste this in any route.ts
+      import { Router, Request, Response } from "express";
+      const router: Router = Router();
+
+      router.get("/", (req: Request, res: Response) => {
+      res.json({ method: req.method, message: "Hello World", ...req.body });
+      });
+
+      export default router;
+4. export from index.ts
