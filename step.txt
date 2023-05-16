@@ -93,3 +93,6 @@ Setting up Routers --- steps
 
       export default router;
 4. export from index.ts
+
+. Create config, environment in root folder.
+. create src/controllers, src/services, src/utils, src/validations
